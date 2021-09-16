@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pdf viewer</title>
+    <script src="https://kit.fontawesome.com/19b0689ab4.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top-bar mt-0">
+        <button class="btn" id="prev-page">
+            <i class="fas fa-arrow-left"></i> Prev Page
+        </button>
+        <button class="btn" id="next-page">
+            Next Page <i class="fas fa-arrow-right"></i></i>
+        </button>
+        <span class="page-info">
+            Page <span id="page-num"></span> of <span id="page-count"></span>
+        </span>
+        
+    </div>
+    <canvas id="pdf-render"></canvas>
+
+    
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="jss/main.js"></script>
+</body>
+</html>
